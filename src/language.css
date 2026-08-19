@@ -1,0 +1,8 @@
+.header-actions { justify-self: end; display: flex; align-items: center; gap: 22px; }
+.language-switch, .mobile-language { display: flex; align-items: center; gap: 7px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: .08em; color: var(--faint); }
+.language-switch button, .mobile-language button { padding: 0; border: 0; background: transparent; color: var(--faint); cursor: pointer; transition: color .2s ease; }
+.language-switch button:hover, .language-switch button.is-active, .mobile-language button:hover, .mobile-language button.is-active { color: var(--text); }
+.language-switch button.is-active::after, .mobile-language button.is-active::after { content: ''; display: block; height: 1px; margin-top: 3px; background: var(--signal); }
+.mobile-language { padding: 16px 20px; border-bottom: 1px solid var(--line); }
+.title-line { display: inline; }
+@media (max-width: 900px) { .header-actions { display: none; } }
