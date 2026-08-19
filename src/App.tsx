@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ArrowDown, ArrowUpRight, Github, Menu, X } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, Code2, Menu, X } from 'lucide-react'
 import { capabilities, experience, principles, projects } from './portfolioData'
 
 const navItems = [
@@ -190,7 +190,7 @@ export default function App() {
           <h2>Want to inspect the work?</h2>
           <p>Start with the code. The story behind it is here when you need it.</p>
           <a className="primary-link" href="https://github.com/fogacafe" target="_blank" rel="noreferrer">
-            <Github size={18} /> GitHub / fogacafe <ArrowUpRight size={17} />
+            <Code2 size={18} /> GitHub / fogacafe <ArrowUpRight size={17} />
           </a>
         </section>
       </main>
