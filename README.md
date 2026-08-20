@@ -1,14 +1,38 @@
-# Indtec Portfolio
+# INDTEC / Software Engineering Portfolio
 
-Personal engineering portfolio focused on software architecture, distributed systems, cloud and real-world technical challenges.
+A public engineering portfolio built to connect four things:
 
-## Product direction
+**what I know → where I used it → how I think → where it can be inspected in code.**
 
-Indtec is not intended to be a traditional online résumé. The goal is to connect four things:
+Indtec is not meant to be a traditional online résumé. It is a small public product where career context, engineering decisions and future open-source projects live under the same identity.
 
-**what I know → where I used it → how I think → where it can be inspected in public code.**
+## Mission
 
-The visual language combines modern product minimalism with aerospace engineering interfaces: dark, precise, technical and content-first. Space is an influence, not decoration.
+The portfolio focuses on software engineering shaped by production systems: .NET, distributed processing, cloud, reliability, data, observability, performance and technical leadership.
+
+The visual language combines modern product minimalism with aerospace/mission-control interfaces. Space is an influence, not decoration: telemetry labels, restrained signals, technical grids and contextual color are used to make the experience feel like a system without turning it into a sci-fi theme.
+
+## INDTEC project pattern
+
+Public projects are presented as **INDTEC missions**.
+
+The convention is intentionally simple:
+
+```text
+INDTEC / PUBLIC 001
+INDTEC / MISSION 001
+INDTEC / MISSION 002
+```
+
+Each project should eventually expose:
+
+- a clear problem and domain;
+- the architectural decisions behind it;
+- the smallest stack that makes sense for the problem;
+- a public GitHub repository;
+- a README explaining trade-offs rather than only setup commands.
+
+The portfolio itself is the first public Indtec project.
 
 ## Stack
 
@@ -18,7 +42,32 @@ The visual language combines modern product minimalism with aerospace engineerin
 - Plain CSS
 - Lucide icons
 
-The application intentionally has no backend. New infrastructure should only be introduced when a concrete requirement justifies it.
+There is intentionally no backend. Infrastructure should only be introduced when a concrete requirement justifies it.
+
+## Vibe coding, with engineering judgment
+
+This project deliberately embraces AI-assisted development. The implementation has been built collaboratively with **OpenAI Codex**, using conversation as part of the engineering loop instead of treating AI only as autocomplete.
+
+The workflow is closer to pair programming:
+
+1. define the intent, product constraints and visual direction;
+2. discuss trade-offs before changing code;
+3. let the agent implement a focused iteration;
+4. review the result as a human — visually and technically;
+5. refine what feels generic, excessive or disconnected from the real goal;
+6. commit each meaningful evolution semantically.
+
+That distinction matters to this repository. The goal is not to hide the use of AI or generate a large application in one prompt. The goal is to demonstrate how AI can accelerate implementation while a human keeps ownership of the context, taste, architecture, career narrative and final decisions.
+
+Codex is OpenAI's coding agent for writing, reviewing and delivering code, and is designed for end-to-end software engineering tasks such as features, refactors and migrations. This project uses that agentic style as a development tool while keeping human review as the release gate.
+
+Official Codex reference: https://openai.com/codex/
+
+## Why not just autocomplete?
+
+Inline assistants are useful and remain part of everyday development, but this experiment is intentionally broader than line-by-line code completion. The interesting part here is giving the AI enough product and engineering context to reason across a feature, repository, visual system and series of commits — then reviewing the result as a collaborator would.
+
+This is not a benchmark against any specific assistant. It is a statement about the workflow I want to explore: **context first, code second.**
 
 ## Local development
 
@@ -37,14 +86,16 @@ npm run preview
 ## Portfolio structure
 
 - Profile / current engineering direction
+- Professional journey / flight log
+- Academic background and continuous learning
 - Engineering challenges
 - Technologies shown in context
-- Public projects / missions
+- Public projects / Indtec missions
 - Engineering principles
-- Contact / GitHub
+- GitHub and LinkedIn contact channels
 
-The current copy is a first-pass content scaffold. Career details and public project links will be refined as the portfolio evolves.
+## Development principles
 
-## Development approach
+The repository evolves in small semantic iterations rather than one generated dump. AI can be used aggressively to accelerate implementation, but complexity still needs a reason to exist and every visible career claim should stay grounded in real experience.
 
-This repository is built in small semantic iterations instead of one generated dump. Commits should describe meaningful product or engineering changes, while still using AI aggressively where it accelerates implementation.
+**Build fast. Review carefully. Keep the system understandable.**
