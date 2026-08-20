@@ -83,6 +83,29 @@ npm run build
 npm run preview
 ```
 
+## Deployment
+
+Production is designed to run as a static site on **GitHub Pages** under the custom domain `indtec.dev`.
+
+Every push to `main` triggers the Pages workflow:
+
+```text
+main
+  ↓
+GitHub Actions
+  ↓
+npm install
+npm run build
+  ↓
+dist
+  ↓
+GitHub Pages
+  ↓
+indtec.dev
+```
+
+The custom domain itself is configured in the repository Pages settings and in the DNS provider. No application secrets or backend infrastructure are required.
+
 ## Portfolio structure
 
 - Profile / current engineering direction
