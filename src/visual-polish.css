@@ -1,0 +1,51 @@
+.capability-card {
+  position: relative;
+  overflow: hidden;
+  transition: background .3s ease, border-color .3s ease;
+}
+
+.capability-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .35s ease;
+  background: radial-gradient(circle at 16% 30%, rgba(var(--card-accent), .12), transparent 34%);
+}
+
+.capability-card:hover::before { opacity: 1; }
+
+.capability-card--1 { --card-accent: 92, 225, 190; }
+.capability-card--2 { --card-accent: 93, 145, 255; }
+.capability-card--3 { --card-accent: 177, 111, 255; }
+.capability-card--4 { --card-accent: 88, 184, 255; }
+.capability-card--5 { --card-accent: 255, 180, 84; }
+.capability-card--6 { --card-accent: 110, 220, 170; }
+
+.tech-icon {
+  position: relative;
+  z-index: 1;
+  width: 46px;
+  height: 46px;
+  margin-top: 34px;
+  display: grid;
+  place-items: center;
+  color: rgb(var(--card-accent));
+  border: 1px solid rgba(var(--card-accent), .22);
+  background: linear-gradient(145deg, rgba(var(--card-accent), .09), rgba(var(--card-accent), .025));
+  box-shadow: inset 0 1px rgba(255,255,255,.035), 0 0 28px rgba(var(--card-accent), .035);
+}
+
+.tech-icon svg { width: 25px; height: 25px; }
+.capability-card h3 { margin-top: 28px; position: relative; z-index: 1; }
+.capability-card > p, .technology-list, .card-top { position: relative; z-index: 1; }
+
+.capability-card:hover .tech-icon {
+  border-color: rgba(var(--card-accent), .38);
+  box-shadow: inset 0 1px rgba(255,255,255,.05), 0 0 30px rgba(var(--card-accent), .08);
+}
+
+@media (max-width: 900px) {
+  .tech-icon { margin-top: 28px; }
+}
