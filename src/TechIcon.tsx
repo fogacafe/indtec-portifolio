@@ -1,8 +1,10 @@
+import type { ReactElement } from 'react'
+
 type TechIconProps = {
   id: string
 }
 
-const iconPaths: Record<string, JSX.Element> = {
+const iconPaths: Record<string, ReactElement> = {
   'SYS.01': <><path d="M8 8 4 12l4 4"/><path d="m16 8 4 4-4 4"/><path d="m14 5-4 14"/></>,
   'SYS.02': <><circle cx="6" cy="7" r="2"/><circle cx="18" cy="7" r="2"/><circle cx="12" cy="17" r="2"/><path d="m7.7 8.1 2.8 6.1M16.3 8.1l-2.8 6.1M8 7h8"/></>,
   'SYS.03': <><path d="M7 17h10a4 4 0 0 0 .5-8 5.5 5.5 0 0 0-10.6 1.5A3.5 3.5 0 0 0 7 17Z"/><path d="m10 13 2-2 2 2M12 11v7"/></>,
