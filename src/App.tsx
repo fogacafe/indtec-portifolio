@@ -4,6 +4,7 @@ import { copy, portfolioData, type Language } from './i18n'
 import TechIcon from './TechIcon'
 import './language.css'
 import './visual-polish.css'
+import './section-accents.css'
 
 function SectionLabel({ index, children }: { index: string; children: string }) {
   return <div className="section-label"><span>{index}</span><span>{children}</span></div>
