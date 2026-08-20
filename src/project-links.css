@@ -1,0 +1,82 @@
+.project-row--featured {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(93,225,190,.045), rgba(93,145,255,.025) 58%, transparent);
+}
+
+.project-row--featured::before {
+  content: '';
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: -180px;
+  top: -140px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(93,225,190,.12), rgba(93,145,255,.05) 42%, transparent 70%);
+  filter: blur(12px);
+}
+
+.project-row--featured > * { position: relative; z-index: 1; }
+
+.project-source {
+  width: fit-content;
+  margin-top: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 11px;
+  border: 1px solid rgba(93,225,190,.28);
+  color: rgba(235,242,240,.88);
+  background: rgba(93,225,190,.055);
+  font-size: 9px;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  transition: border-color .25s ease, background .25s ease, transform .25s ease;
+}
+
+.project-source:hover {
+  transform: translateY(-1px);
+  border-color: rgba(93,225,190,.56);
+  background: rgba(93,225,190,.10);
+}
+
+.project-row--featured .project-action {
+  display: block;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 48px;
+}
+
+.contact-links .primary-link,
+.contact-links .secondary-link { margin-top: 0; }
+
+.secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid rgba(86,157,255,.28);
+  background: rgba(86,157,255,.035);
+  font-size: 12px;
+  transition: border-color .25s ease, background .25s ease, transform .25s ease;
+}
+
+.secondary-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(86,157,255,.58);
+  background: rgba(86,157,255,.08);
+}
+
+.secondary-link svg:first-child { color: #569dff; }
+.secondary-link svg:last-child { margin-left: 12px; }
+
+@media (max-width: 560px) {
+  .contact-links { flex-direction: column; width: 100%; }
+  .contact-links a { width: 100%; justify-content: space-between; }
+  .project-source { margin-top: 20px; }
+}
