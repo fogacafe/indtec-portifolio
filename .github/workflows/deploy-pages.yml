@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout portfolio
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -26,11 +26,29 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies
+      - name: Install portfolio dependencies
         run: npm install
 
-      - name: Build
+      - name: Build portfolio
         run: npm run build
+
+      - name: Checkout Planner LABZ
+        uses: actions/checkout@v4
+        with:
+          repository: fogacafe/indtec-labz-planner
+          ref: main
+          path: .labz/planner
+
+      - name: Build Planner LABZ
+        working-directory: .labz/planner
+        run: |
+          npm install
+          npm run build
+
+      - name: Mount Planner LABZ into portfolio artifact
+        run: |
+          mkdir -p dist/labz/planner
+          cp -R .labz/planner/dist/. dist/labz/planner/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
