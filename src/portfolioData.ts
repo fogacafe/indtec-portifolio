@@ -51,19 +51,19 @@ export const experience = [
 
 export const projects = [
   {
-    mission: 'MISSION 001',
-    name: 'BandFlow',
-    status: 'PLANNED',
-    description: 'A music-focused engineering ecosystem designed to explore domain modeling, distributed services and event-driven architecture.',
-    stack: ['.NET', 'DDD', 'PostgreSQL', 'AWS'],
-    href: '#',
+    mission: 'LABZ / 001',
+    name: 'Catalog',
+    status: 'COMPLETED',
+    description: 'A deliberately small music catalog built to make engineering decisions visible: domain modeling, clean boundaries, secure persistence and tests that exercise a real PostgreSQL database.',
+    stack: ['.NET', 'DDD', 'Dapper', 'PostgreSQL', 'Testcontainers', 'AWS'],
+    href: 'https://github.com/fogacafe/indtec-labz-catalog',
   },
   {
-    mission: 'MISSION 002',
-    name: 'Engineering Labs',
+    mission: 'LABZ / 002',
+    name: 'Next experiment',
     status: 'PLANNED',
-    description: 'Small, focused experiments around software architecture, messaging, performance and reusable .NET building blocks.',
-    stack: ['C#', 'Distributed systems', 'Observability'],
+    description: 'The next focused lab will extend the same engineering universe with a new problem instead of turning Catalog into a kitchen-sink project.',
+    stack: ['Distributed systems', 'Messaging', 'Resilience'],
     href: '#',
   },
 ]
