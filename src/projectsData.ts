@@ -7,6 +7,7 @@ type Project = {
   description: string
   stack: string[]
   href: string
+  demoHref?: string
 }
 
 export const projectsData: Record<Language, Project[]> = {
@@ -27,6 +28,15 @@ export const projectsData: Record<Language, Project[]> = {
       stack: ['.NET', 'AWS Lambda', 'SQS', 'SNS', 'DynamoDB', 'CloudFormation'],
       href: 'https://github.com/fogacafe/indtec-labz-live',
     },
+    {
+      mission: 'LABZ / 003',
+      name: 'Planner',
+      status: 'CONCLUÍDO',
+      description: 'Planner anual interativo com edição inline, timeline por quarters/meses/semanas, drag-and-drop com replanejamento de fila, filtros e persistência local — construído para ser usado direto no navegador.',
+      stack: ['React', 'TypeScript', 'Vite', 'LocalStorage', 'Drag & Drop'],
+      href: 'https://github.com/fogacafe/indtec-labz-planner',
+      demoHref: '/labz/planner/',
+    },
   ],
   en: [
     {
@@ -44,6 +54,15 @@ export const projectsData: Record<Language, Project[]> = {
       description: 'An event-driven lab exploring Lambda, SQS/SNS, DynamoDB idempotency, partial batch responses, cold-start-aware DI, DLQ and CloudFormation infrastructure.',
       stack: ['.NET', 'AWS Lambda', 'SQS', 'SNS', 'DynamoDB', 'CloudFormation'],
       href: 'https://github.com/fogacafe/indtec-labz-live',
+    },
+    {
+      mission: 'LABZ / 003',
+      name: 'Planner',
+      status: 'COMPLETED',
+      description: 'An interactive annual planner with inline editing, quarter/month/week timeline, drag-and-drop queue reflow, filters and local persistence — built to be used directly in the browser.',
+      stack: ['React', 'TypeScript', 'Vite', 'LocalStorage', 'Drag & Drop'],
+      href: 'https://github.com/fogacafe/indtec-labz-planner',
+      demoHref: '/labz/planner/',
     },
   ],
 }
