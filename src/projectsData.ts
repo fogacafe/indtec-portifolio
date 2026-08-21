@@ -37,6 +37,14 @@ export const projectsData: Record<Language, Project[]> = {
       href: 'https://github.com/fogacafe/indtec-labz-planner',
       demoHref: '/labz/planner/',
     },
+    {
+      mission: 'LABZ / 004',
+      name: 'Gateway',
+      status: 'CONCLUÍDO',
+      description: 'Laboratório de performance e resiliência que torna o comportamento distribuído visível: cache-aside com Redis, comunicação gRPC, tracing com OpenTelemetry/Jaeger e falhas controladas no downstream.',
+      stack: ['.NET', 'gRPC', 'Redis', 'OpenTelemetry', 'Jaeger', 'Docker'],
+      href: 'https://github.com/fogacafe/indtec-labz-gateway',
+    },
   ],
   en: [
     {
@@ -63,6 +71,14 @@ export const projectsData: Record<Language, Project[]> = {
       stack: ['React', 'TypeScript', 'Vite', 'LocalStorage', 'Drag & Drop'],
       href: 'https://github.com/fogacafe/indtec-labz-planner',
       demoHref: '/labz/planner/',
+    },
+    {
+      mission: 'LABZ / 004',
+      name: 'Gateway',
+      status: 'COMPLETED',
+      description: 'A performance and resilience lab that makes distributed behavior visible: Redis cache-aside, gRPC communication, OpenTelemetry/Jaeger tracing and controlled downstream failures.',
+      stack: ['.NET', 'gRPC', 'Redis', 'OpenTelemetry', 'Jaeger', 'Docker'],
+      href: 'https://github.com/fogacafe/indtec-labz-gateway',
     },
   ],
 }
