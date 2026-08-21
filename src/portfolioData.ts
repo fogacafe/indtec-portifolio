@@ -60,11 +60,11 @@ export const projects = [
   },
   {
     mission: 'LABZ / 002',
-    name: 'Next experiment',
-    status: 'PLANNED',
-    description: 'The next focused lab will extend the same engineering universe with a new problem instead of turning Catalog into a kitchen-sink project.',
-    stack: ['Distributed systems', 'Messaging', 'Resilience'],
-    href: '#',
+    name: 'Live',
+    status: 'COMPLETED',
+    description: 'An event-driven serverless lab focused on message delivery as a real-world constraint: reusable Lambda execution boundaries, cold-start-aware DI, SQS partial batch retries, DynamoDB idempotency and SNS publication.',
+    stack: ['.NET', 'AWS Lambda', 'SQS', 'SNS', 'DynamoDB', 'CloudFormation'],
+    href: 'https://github.com/fogacafe/indtec-labz-live',
   },
 ]
 
