@@ -20,62 +20,50 @@ jobs:
     steps:
       - name: Checkout portfolio
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Install portfolio dependencies
         run: npm install
-
       - name: Build portfolio
         run: npm run build
-
       - name: Checkout Planner LABZ
         uses: actions/checkout@v4
         with:
           repository: fogacafe/indtec-labz-planner
           ref: main
           path: .labz/planner
-
       - name: Build Planner LABZ
         working-directory: .labz/planner
         run: |
           npm install
           npm run build
-
       - name: Mount Planner LABZ into portfolio artifact
         run: |
           mkdir -p dist/labz/planner
           cp -R .labz/planner/dist/. dist/labz/planner/
-
       - name: Checkout Drums LABZ
         uses: actions/checkout@v4
         with:
           repository: fogacafe/indtec-labz-drums
           ref: main
           path: .labz/drums
-
       - name: Build Drums LABZ
         working-directory: .labz/drums
         run: |
           npm install
           npm run build
-
       - name: Mount Drums LABZ into portfolio artifact
         run: |
           mkdir -p dist/drums
           cp -R .labz/drums/dist/. dist/drums/
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-
   deploy:
     environment:
       name: github-pages
@@ -88,9 +76,4 @@ jobs:
         uses: actions/deploy-pages@v4
 
 # Refresh embedded LABZ builds by committing this workflow when needed.
-# Drums score sync now follows rendered measure geometry.
-# Drums practice speed and metronome refreshed.
-# Drums mobile audio unlock refreshed.
-# Drums audio diagnostics refreshed.
-# Drums replay-from-end behavior refreshed.
-# Drums musical practice stage redesign refreshed.
+# Drums final practice engine: MusicXML expected hits + live MIDI timing feedback.
