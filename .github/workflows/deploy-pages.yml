@@ -89,3 +89,4 @@ jobs:
 
 # Refresh embedded LABZ builds by committing this workflow when needed.
 # Drums score sync now follows rendered measure geometry.
+# Drums practice speed and metronome refreshed.
