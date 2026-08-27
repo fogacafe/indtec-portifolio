@@ -50,6 +50,24 @@ jobs:
           mkdir -p dist/labz/planner
           cp -R .labz/planner/dist/. dist/labz/planner/
 
+      - name: Checkout Drums LABZ
+        uses: actions/checkout@v4
+        with:
+          repository: fogacafe/indtec-labz-drums
+          ref: main
+          path: .labz/drums
+
+      - name: Build Drums LABZ
+        working-directory: .labz/drums
+        run: |
+          npm install
+          npm run build
+
+      - name: Mount Drums LABZ into portfolio artifact
+        run: |
+          mkdir -p dist/drums
+          cp -R .labz/drums/dist/. dist/drums/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
