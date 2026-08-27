@@ -78,3 +78,4 @@ jobs:
 # Refresh embedded LABZ builds by committing this workflow when needed.
 # Drums final practice engine: MusicXML expected hits + live MIDI timing feedback.
 # Drums full-chart replay toggle refreshed.
+# Drums compressed MusicXML (.mxl) import refreshed.
