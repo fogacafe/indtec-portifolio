@@ -88,3 +88,4 @@ jobs:
         uses: actions/deploy-pages@v4
 
 # Refresh embedded LABZ builds by committing this workflow when needed.
+# Drums demo refreshed.
