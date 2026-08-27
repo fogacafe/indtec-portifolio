@@ -45,6 +45,15 @@ export const projectsData: Record<Language, Project[]> = {
       stack: ['.NET', 'gRPC', 'Redis', 'OpenTelemetry', 'Jaeger', 'Docker'],
       href: 'https://github.com/fogacafe/indtec-labz-gateway',
     },
+    {
+      mission: 'LABZ / 005',
+      name: 'Drums',
+      status: 'EXPERIMENTAL',
+      description: 'Practice lab para bateria eletrônica: MusicXML, timeline sincronizada, metrônomo, Web MIDI e feedback de timing em tempo real.',
+      stack: ['React', 'TypeScript', 'MusicXML', 'Web MIDI', 'Web Audio'],
+      href: 'https://github.com/fogacafe/indtec-labz-drums',
+      demoHref: '/drums/',
+    },
   ],
   en: [
     {
@@ -79,6 +88,15 @@ export const projectsData: Record<Language, Project[]> = {
       description: 'A performance and resilience lab that makes distributed behavior visible: Redis cache-aside, gRPC communication, OpenTelemetry/Jaeger tracing and controlled downstream failures.',
       stack: ['.NET', 'gRPC', 'Redis', 'OpenTelemetry', 'Jaeger', 'Docker'],
       href: 'https://github.com/fogacafe/indtec-labz-gateway',
+    },
+    {
+      mission: 'LABZ / 005',
+      name: 'Drums',
+      status: 'EXPERIMENTAL',
+      description: 'An electronic-drums practice lab with MusicXML, synchronized timeline, metronome, Web MIDI and real-time timing feedback.',
+      stack: ['React', 'TypeScript', 'MusicXML', 'Web MIDI', 'Web Audio'],
+      href: 'https://github.com/fogacafe/indtec-labz-drums',
+      demoHref: '/drums/',
     },
   ],
 }
