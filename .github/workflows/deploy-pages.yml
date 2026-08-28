@@ -79,3 +79,4 @@ jobs:
 # Drums arrangement timeline now tracks the full scrollable chart width.
 # Drums live kit feedback and normalized instrument matching refreshed.
 # Drums MusicXML percussion MIDI normalization refreshed.
+# Drums open hi-hat shares the visual hi-hat pad.
