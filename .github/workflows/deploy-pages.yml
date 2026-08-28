@@ -77,3 +77,4 @@ jobs:
 
 # Refresh embedded LABZ builds by committing this workflow when needed.
 # Drums arrangement timeline now tracks the full scrollable chart width.
+# Drums live kit feedback and normalized instrument matching refreshed.
