@@ -49,4 +49,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-# Drums Garage-style live kit + MIDI groove recorder/export refreshed.
+# Drums live recording now renders real drum staff positions and updates while recording.
