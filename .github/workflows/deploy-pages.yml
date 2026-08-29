@@ -49,4 +49,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-# Drums mobile header and unsupported MIDI state refreshed.
+# Drums Studio recording: persistent MIDI capture, live score, named takes and explicit preview.
