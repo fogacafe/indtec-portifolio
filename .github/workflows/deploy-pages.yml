@@ -49,4 +49,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-# Drums Practice / Studio mode split refreshed.
+# Drums mobile header and unsupported MIDI state refreshed.
